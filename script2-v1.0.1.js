@@ -62,7 +62,7 @@ Other: 3,
         $('.country_btn .tn-atom[href="/"]').addClass('selected')
         
         if (window.location.href.indexOf("country=") > -1) {
-            $('.country_btn .tn-atom[href="/en/"]').removeClass('selected')
+            $('.country_btn .tn-atom[href="/en"]').removeClass('selected')
             let params = new URLSearchParams(window.location.search);
             let myCountry = String(params.get('country'));
             $('.country_btn .tn-atom[href="/en/?country=' + myCountry + '"]').addClass('selected')
