@@ -743,8 +743,8 @@ document.querySelector('.invest_percent_6 .tn-atom').innerHTML = '(' + other_per
 document.querySelector('.invest_diagram_6').style.paddingTop = (80 - other_percent) * (1 / 100) * 110 + 'px';
 
         setTimeout(function () {
-                if(document.querySelector('.range-813400851-1728419670561')) {
-                    document.querySelector('.range-813400851-1728419670561').remove();
+                if(document.querySelector('.range-826425372-1728419670561')) {
+                    document.querySelector('.range-826425372-1728419670561').remove();
                 }
             }, 200);
 
