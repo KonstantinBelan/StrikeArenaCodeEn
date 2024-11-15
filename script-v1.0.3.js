@@ -707,11 +707,11 @@ if(document.querySelector('#investmentResult')) {
 }
 // Выручка 
 if(document.querySelector('#revenueResult')) {
-    document.querySelector('#revenueResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((revenue_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</span>';
+    document.querySelector('#revenueResult').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((revenue_month / dailyvalue) * dailynominal).toFixed());
 }
 // Прибыль  
 if(document.querySelector('#profitResult')) {
-    document.querySelector('#profitResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((profit_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</span>';
+    document.querySelector('#profitResult').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((profit_month / dailyvalue) * dailynominal).toFixed());
 }
 if(document.querySelector('#paybackResult')) {
     document.querySelector('#paybackResult').innerHTML = paybackValue;
@@ -722,23 +722,23 @@ if(document.querySelector('#dateResult')) {
     
 }, 200);            
 
-document.querySelector('.invest_number_2 .tn-atom').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((room / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+document.querySelector('.invest_number_2 .tn-atom').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((room / dailyvalue) * dailynominal).toFixed());
 document.querySelector('.invest_percent_2 .tn-atom').innerHTML = '(' + room_percent + '%)';
 document.querySelector('.invest_diagram_2').style.paddingTop = (80 - room_percent) * (1 / 100) * 110 + 'px';
 
-document.querySelector('.invest_number_3 .tn-atom').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((pczone / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+document.querySelector('.invest_number_3 .tn-atom').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((pczone / dailyvalue) * dailynominal).toFixed());
 document.querySelector('.invest_percent_3 .tn-atom').innerHTML = '(' + pczone_percent + '%)';
 document.querySelector('.invest_diagram_3').style.paddingTop = (80 - pczone_percent) * (1 / 100) * 110 + 'px';
 
-document.querySelector('.invest_number_4 .tn-atom').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((loungezone / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+document.querySelector('.invest_number_4 .tn-atom').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((loungezone / dailyvalue) * dailynominal).toFixed());
 document.querySelector('.invest_percent_4 .tn-atom').innerHTML = '(' + loungezone_percent + '%)';
 document.querySelector('.invest_diagram_4').style.paddingTop = (80 - loungezone_percent) * (1 / 100) * 110 + 'px';
 
-document.querySelector('.invest_number_5 .tn-atom').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((admin / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+document.querySelector('.invest_number_5 .tn-atom').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((admin / dailyvalue) * dailynominal).toFixed());
 document.querySelector('.invest_percent_5 .tn-atom').innerHTML = '(' + admin_percent + '%)';
 document.querySelector('.invest_diagram_5').style.paddingTop = (80 - admin_percent) * (1 / 100) * 110 + 'px';
 
-document.querySelector('.invest_number_6 .tn-atom').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((other / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+document.querySelector('.invest_number_6 .tn-atom').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((other / dailyvalue) * dailynominal).toFixed());
 document.querySelector('.invest_percent_6 .tn-atom').innerHTML = '(' + other_percent + '%)';
 document.querySelector('.invest_diagram_6').style.paddingTop = (80 - other_percent) * (1 / 100) * 110 + 'px';
 
