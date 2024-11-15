@@ -771,7 +771,7 @@ document.querySelector('.invest_diagram_6').style.paddingTop = (80 - other_perce
   
     document.addEventListener('DOMContentLoaded', function () {
 	/* Header Sticky */
-	let headerContainer = document.querySelector('#rec808658909 .t396__artboard')
+	let headerContainer = document.querySelector('#rec826425369 .t396__artboard')
 	if (headerContainer) {
 		let sticky = headerContainer.offsetTop + 40
 		document.addEventListener('scroll', scrollMenu)
