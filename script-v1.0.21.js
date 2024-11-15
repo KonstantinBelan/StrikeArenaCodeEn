@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const profitValueNew = new Intl.NumberFormat('' + NumberFormats + '').format(profitValue);
             heroJSformCalcProfit.innerHTML 
                 = heroJSformCalcProfit.innerHTML 
-                .replace(profitTxtSearch, '<span id="profitResult">' + profitValueNew + ' ' + currency + '</span>');
+                .replace(profitTxtSearch, '<span id="profitResult">' + currency + ' ' + profitValueNew + '</span>');
         }
         
         function dateSearch(node) {
