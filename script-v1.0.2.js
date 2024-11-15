@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() { 
             let daily_valute = 1;
             let nominal = 1;
-            let NumberFormats = 'ru-RU';
+            let NumberFormats = 'en-US';
             if (window.location.href.indexOf("country=") > -1) {
                 let params2 = new URLSearchParams(window.location.search);
                 let myCountry2 = String(params2.get('country'));
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.querySelector('input[name=daily_nominal]').value = nominal;
                 });
             } else {
-                NumberFormats = 'ru-RU';
-                currency = '₽';
+                NumberFormats = 'en-US';
+                currency = 'RUB';
             }
     
     function investSearch(node) {
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const revenueValueNew = new Intl.NumberFormat('' + NumberFormats + '').format(revenueValue);
             heroJSformCalcRevenue.innerHTML 
                 = heroJSformCalcRevenue.innerHTML 
-                .replace(revenueTxtSearch, '<span id="revenueResult">' + revenueValueNew + ' ' + currency + '</span>');
+                .replace(revenueTxtSearch, '<span id="revenueResult">' + currency + ' ' + revenueValueNew + '</span>');
         }
         
         function paybackSearch(node) {
