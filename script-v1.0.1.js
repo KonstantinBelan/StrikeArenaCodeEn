@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 if( myCountry2 == 'kazahstan' ) {
                     NumberFormats = 'kk-KZ';
-                    currency = 'тенге';
+                    currency = 'KZT';
                 }
                 if( myCountry2 == 'uzbekistan' ) {
                     NumberFormats = 'uz-UZ';
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         heroJSformCalc.innerHTML 
             = heroJSformCalc.innerHTML 
-            .replace(investmentSearch, '<span id="investmentResult"><span style="opacity:0.5;">Выберите кол-во ПК</span></span>');
+            .replace(investmentSearch, '<span id="investmentResult"><span style="opacity:0.5;">Select the number of computers</span></span>');
         
     }
     
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
         function dateSearch(node) {
             const heroJSformCalcDate = document.querySelector('.js_form_calc_date');
             const dateTxtSearch = /%date%/g;
-            const dateValueNew = '3 месяца';
+            const dateValueNew = '3 months';
             heroJSformCalcDate.innerHTML 
                 = heroJSformCalcDate.innerHTML 
                 .replace(dateTxtSearch, '<span id="dateResult">' + dateValueNew + '</span>');
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
 
   var heroFormCheckbox = document.querySelector(
-		'#rec813400851 .t-checkbox__control'
+		'#rec826425372 .t-checkbox__control'
 	)
   if(heroFormCheckbox) {
     var heroFormLeasings = document.querySelector('input[name="leasings"]')
@@ -263,11 +263,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // ЗНАЧЕНИЯ ДЛЯ КАЛЬКУЛЯТОРА //
             // С какого месяца прибыль
-            let profit_date = '2 месяца';
+            let profit_date = '2 months';
             // Окупаемость
-            paybackValue = '20 месяцев';
+            paybackValue = '20 months';
             if(leasingscheck.checked === true) {
-                paybackValue = '17 месяцев';
+                paybackValue = '17 months';
             }
             // Сумма расходов на PC Zone
             let investpc = 188900;
@@ -339,9 +339,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 1);
                 other = other + (other_var * 1);
                 
-                paybackValue = '17 месяцев';
+                paybackValue = '17 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '14 месяцев';
+                    paybackValue = '14 months';
                 }
             }
             if(quantityValue == '30') {
@@ -359,9 +359,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 2);
                 other = other + (other_var * 2);
                 
-                paybackValue = '16 месяцев';
+                paybackValue = '16 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '13 месяцев';
+                    paybackValue = '13 months';
                 }
             }
             if(quantityValue == '35') {
@@ -379,9 +379,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 3);
                 other = other + (other_var * 3);
                 
-                paybackValue = '14 месяцев';
+                paybackValue = '14 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '11 месяцев';
+                    paybackValue = '11 months';
                 }
             }
             if(quantityValue == '40') {
@@ -399,9 +399,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 4);
                 other = other + (other_var * 4);
                 
-                paybackValue = '13 месяцев';
+                paybackValue = '13 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '10 месяцев';
+                    paybackValue = '10 months';
                 }
             }
             if(quantityValue == '45') {
@@ -419,9 +419,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 5);
                 other = other + (other_var * 5);
                 
-                paybackValue = '13 месяцев';
+                paybackValue = '13 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '10 месяцев';
+                    paybackValue = '10 months';
                 }
             }
             if(quantityValue == '50') {
@@ -439,9 +439,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 6);
                 other = other + (other_var * 6);
                 
-                paybackValue = '12 месяцев';
+                paybackValue = '12 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '9 месяцев';
+                    paybackValue = '9 months';
                 }
             }
             if(quantityValue == '55') {
@@ -459,9 +459,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 7);
                 other = other + (other_var * 7);
                 
-                paybackValue = '12 месяцев';
+                paybackValue = '12 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '9 месяцев';
+                    paybackValue = '9 months';
                 }
             }
             if(quantityValue == '60') {
@@ -479,9 +479,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 8);
                 other = other + (other_var * 8);
                 
-                paybackValue = '12 месяцев';
+                paybackValue = '12 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '9 месяцев';
+                    paybackValue = '9 months';
                 }
             }
             if(quantityValue == '65') {
@@ -499,9 +499,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 9);
                 other = other + (other_var * 9);
                 
-                paybackValue = '12 месяцев';
+                paybackValue = '12 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '9 месяцев';
+                    paybackValue = '9 months';
                 }
             }
             if(quantityValue == '70') {
@@ -519,9 +519,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 10);
                 other = other + (other_var * 10);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '75') {
@@ -539,9 +539,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 11);
                 other = other + (other_var * 11);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '80') {
@@ -559,9 +559,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 12);
                 other = other + (other_var * 12);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '85') {
@@ -579,9 +579,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 13);
                 other = other + (other_var * 13);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '90') {
@@ -599,9 +599,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 14);
                 other = other + (other_var * 14);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '95') {
@@ -619,9 +619,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 15);
                 other = other + (other_var * 15);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             if(quantityValue == '100') {
@@ -639,9 +639,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 admin = admin + (admin_var * 16);
                 other = other + (other_var * 16);
                 
-                paybackValue = '11 месяцев';
+                paybackValue = '11 months';
                 if(leasingscheck.checked === true) {
-                    paybackValue = '8 месяцев';
+                    paybackValue = '8 months';
                 }
             }
             
