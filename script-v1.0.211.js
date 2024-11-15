@@ -703,15 +703,15 @@ document.addEventListener('DOMContentLoaded', function() {
 setTimeout(function() {
 // Сумма инвестиций
 if(document.querySelector('#investmentResult')) {
-    document.querySelector('#investmentResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((investfull / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+    document.querySelector('#investmentResult').innerHTML = '<span class="currency">'+ currency +'</span> ' + new Intl.NumberFormat(''+ NumberFormats +'').format(((investfull / dailyvalue) * dailynominal).toFixed());
 }
 // Выручка 
 if(document.querySelector('#revenueResult')) {
-    document.querySelector('#revenueResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((revenue_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+    document.querySelector('#revenueResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((revenue_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</span>';
 }
 // Прибыль  
 if(document.querySelector('#profitResult')) {
-    document.querySelector('#profitResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((profit_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</div>';
+    document.querySelector('#profitResult').innerHTML = new Intl.NumberFormat(''+ NumberFormats +'').format(((profit_month / dailyvalue) * dailynominal).toFixed()) + ' <span class="currency">'+ currency +'</span>';
 }
 if(document.querySelector('#paybackResult')) {
     document.querySelector('#paybackResult').innerHTML = paybackValue;
