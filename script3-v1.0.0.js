@@ -1,5 +1,5 @@
   $(function(){
-        const blockId = '#rec813400851';
+        const blockId = '#rec826425372';
         let timerRemoveSubmit = setInterval(function() {
             $(blockId + ' .tn-form__submit').remove(); 
             $('script#t-zero-range-script').remove();
