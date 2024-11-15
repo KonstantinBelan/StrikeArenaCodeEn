@@ -765,7 +765,7 @@ document.querySelector('.invest_diagram_6').style.paddingTop = (80 - other_perce
         iframes.forEach(iframe => {
           iframe.src = iframe.dataset.src;
         });
-      }, 100);
+      }, 700);
 
   }
   
