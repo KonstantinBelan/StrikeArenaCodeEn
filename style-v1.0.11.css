@@ -287,7 +287,7 @@ input[name="leasings"],
     font-family: 'Inter' !important;
     text-transform: none !important;
 }
-.country_btn .tn-atom[href="/?country=oae"] {
+.country_btn .tn-atom[href="/en/?country=oae"] {
     display: none !important;
 }
 .t668__text {
