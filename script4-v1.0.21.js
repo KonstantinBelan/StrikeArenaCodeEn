@@ -13,7 +13,7 @@
     }
 
     $(document).ready(function() {
-        var blockIds = ['#rec826425465', '#rec826425474', '#rec826425472', '#rec831540817']; // массив идентификаторов блоков
+        var blockIds = ['#rec826425465', '#rec826425474', '#rec826425472', '#rec831589096']; // массив идентификаторов блоков
         adjustScreenZoom(blockIds); 
     
         $(window).resize(function() {
